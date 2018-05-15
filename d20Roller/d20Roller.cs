@@ -36,6 +36,7 @@ namespace d20_Roller
                 for (int i = 0; i < numDice; i++)
                 {
                     current = dice.Next(numSides) + 1;
+
                     Console.WriteLine($"Roll {i + 1}: {current}");
                     total += current;
                 }
@@ -130,7 +131,15 @@ namespace d20_Roller
                     Console.WriteLine("Would you like to do a new roll? (y or n)");
 
                     checker = Convert.ToChar(Console.ReadLine());
-                    break;
+
+                    if (checker == 'y' || checker == 'n')
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        continue;
+                    }
                 }
                 catch (FormatException)
                 {
