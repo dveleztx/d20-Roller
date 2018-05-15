@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace d20_Roller
 {
-    class Program
+    class d20Roller
     {
         static void Main(string[] args)
         {
